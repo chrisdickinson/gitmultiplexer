@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+var multiplex = require('gitmultiplex/plexer').multiplex,
+    get_multiplexer_info = require('gitmultiplex/utils').info,
+    cmd = process.env['SSH_ORIGINAL_COMMAND'],
+    repo = (/'(.*?)'/g)(cmd)[1];
+
+get_multiplexer_info(repo, function(remotes) {
+  multiplex(
+    process.stdin,
+    process.stdout,
+    process.stderr,
+    cmd
+  );
+});
