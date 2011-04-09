@@ -1,0 +1,18 @@
+{
+    "name": "gitmultiplex",
+    "version":"0.0.1",
+    "description": "a utility for multiplexing git pushes",
+    "keywords": [ 
+        "git",
+        "multiplex"
+    ],
+    "author":"Chris Dickinson",
+    "directories": {"lib": "./lib" },
+    "main": "./lib/index",
+    "bin":{
+        "gitmultiplex":"./bin/gitmultiplex"
+    },
+    "license": [
+        "New BSD License"
+    ]
+}
