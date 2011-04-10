@@ -44,3 +44,5 @@ In your repo, add the following remote:
     git remote add multiplex multiplex@localhost:$YOUR_REPO
 
 Now, when you `git push multiplex master`, your changes will be pushed to `no.de` and `github.com` simultaneously! 
+
+Licensed BSD.
